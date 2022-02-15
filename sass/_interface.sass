@@ -1,0 +1,107 @@
+.button
+    padding: 13px 20px
+    border: none
+    border-radius: 2px
+    text-transform: uppercase
+    font-size: 0.93rem
+    outline: none
+    &:hover
+        cursor: pointer
+
+    &--primary
+        background-color: $primary
+        color: $light
+        box-shadow: 0px 5px 15px rgba($primary, 0.2)
+        transition: box-shadow 0.3s
+        &:hover
+            box-shadow: none
+    &--outline
+        border: 1px solid #FFFFFF
+        background-color: transparent
+        color: #fff
+
+.label
+    font-size: 1.07rem
+    &--light
+        color: rgba($light, 0.5)
+    &--dark
+        color: rgba(54, 54, 54, 0.5)
+
+.input
+    border: none
+    background-color: transparent
+    border-bottom: 1px solid rgba(54,54,54, 0.3)
+    font-size: 1.285rem
+    color: $light
+    padding: 0.5rem 0
+    outline: none
+    &::placeholder
+        color: $light
+    &.invalid
+        border-bottom: 1px solid tomato
+        
+.policy
+    &__checkbox
+        opacity: 0
+        visibility: hidden
+        &:checked + 
+            .policy__label
+                &::before
+                    background: $primary url('../img/check.svg') no-repeat center / 0.8rem
+    &__label
+        display: flex
+        align-items: center
+        &::before
+            content: ''
+            width: 18px
+            height: 18px
+            border: 1px solid $primary
+            border-radius: 1px
+            cursor: pointer
+            margin-right: 0.64rem
+        &--center
+            justify-content: center
+            font-size: 1.1428rem
+
+label
+    &.invalid
+        color: tomato
+
+.scroll__block
+    opacity: 0
+    visibility: hidden
+    position: fixed
+    display: flex
+    justify-content: center
+    align-items: center
+    left: 0
+    bottom: 0
+    min-width: 247px
+    min-height: 6.928rem
+    z-index: 999
+    &-up
+        font-family: 'Yeseva One', cursive
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 100%
+        min-height: 6.928rem
+        background-color: $dark
+        text-decoration: none
+        text-transform: uppercase
+        color: $light
+        font-size: 0.857rem
+        line-height: 138.6%
+        font-weight: normal
+        &::after
+            content: ''
+            width: 30px
+            height: 30px
+            border: 2px solid $primary
+            border-radius: 50%
+            transform: rotate (90deg)
+            background: url('../img/arrow-up.svg') no-repeat center
+            margin-left: 16px
+    &--visible
+        opacity: 1
+        visibility: visible

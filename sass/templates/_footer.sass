@@ -1,0 +1,109 @@
+.footer
+    background: $dark url('../img/footer-bg.jpg') no-repeat center / cover
+    padding: 3rem 0 0
+    .policy__label 
+        margin-left: -1.6rem
+    &__wrap
+        background-color: $black
+        max-width: 63.07rem
+        margin: auto
+        margin-top: -19rem
+        margin-bottom: 3.51rem
+        padding: 2.5rem
+    &__title
+        text-transform: uppercase
+        font-family: 'Yeseva One', cursive
+        font-weight: normal
+        font-size: 1.428rem
+        text-align: center
+        margin-bottom: 3.214rem
+        margin-top: 0
+    &__form
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        max-width: 37.142rem
+        margin: auto
+    &__input
+        padding-top: 0.3rem
+        &-group
+            display: flex
+            flex-direction: column
+            flex-basis: 45%
+            margin-bottom: 3.2rem
+            &--full-width
+                flex-basis: 100%
+                margin-bottom: 2rem
+        &:placeholder
+            color: black
+    &__policy
+        flex-basis: 100%
+        margin-bottom: 3.5rem
+        margin-top: 0.4rem
+    &__button
+        margin: auto
+        padding: 1.285rem 4.785rem
+    &__menu
+        background-color: $dark
+        padding: 3.429rem 0
+        &__desc
+            margin: auto
+            font-family: 'Yeseva One', cursive
+            font-weight: normal
+            font-size: 1.43rem
+            line-height: 2rem
+            max-width: 42.07rem
+            margin-bottom: 1.85rem
+            &--primary
+                color: $primary
+        &__buttons
+            display: flex
+            justify-content: space-between
+            max-width: 71px
+            margin: auto
+        &__imgs
+            background: $primary 
+            border-radius: 50%
+            width: 28px
+            height: 28px
+            &:first-child
+                background: $primary url('../img/mail.svg') no-repeat center
+                
+            &:last-child
+                background: $primary url('../img/inst.svg') no-repeat center
+    &__after
+        &__title
+            position: relative
+            font-family: 'Yeseva One', cursive
+            text-transform: uppercase
+            font-size: 1.429rem
+            line-height: 2rem
+            text-align: center
+            color: $primary
+            max-width: 35.714rem
+            margin: auto auto 6.929rem
+            font-weight: normal
+            &::after
+                content: ''
+                position: absolute
+                top: 5.6rem
+                left: 18.3rem
+                width: 28px
+                height: 28px
+                background: $primary url(../img/instagram.png) no-repeat center
+                border-radius: 100%
+                cursor: pointer
+            &::before
+                content: ''
+                position: absolute
+                top: 5.6rem
+                left: 15.2rem
+                width: 28px
+                height: 28px
+                background: $primary url(../img/message.png) no-repeat center
+                border-radius: 100%
+                cursor: pointer
+    &__map
+        margin: auto
+        max-width: 925px
+        margin-bottom: 4rem

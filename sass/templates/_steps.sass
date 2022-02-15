@@ -1,0 +1,87 @@
+.steps
+    margin-top: -36.57rem
+    padding-top: 30.57rem
+    padding-bottom: 32.64rem
+    &__swiper
+        &:nth-child(1)
+            max-width: 33.071rem
+        &:nth-child(2)
+            max-width:  54.6428rem
+    .section
+        &-title
+            margin-bottom: -2.5rem
+            &__heading
+                font-size: 1.94rem
+                display: flex
+                flex-direction: column
+                width: 40%
+                margin-top: 1rem
+        &-content
+            margin-top: 6.9rem
+            margin-right: 9.714rem
+            margin-left: 0.1rem 
+            &__count
+                font-family: 'Yeseva One'
+                text-transform: uppercase
+                font-size: 1.286rem
+                line-height: 1.786rem
+                font-weight: bold
+            &__heading
+                &--primary
+                    font-family: 'Yeseva One',cursive
+                    text-transform: uppercase
+                    font-weight: normal
+                    font-size: 1.07rem
+                    line-height: 1.642rem
+                    color: $primary
+            &__word
+                display: flex
+                align-items: center
+    .swiper-container
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        margin-top: -1.2rem
+        margin-left: 0.1rem
+    &-desc
+        width: 9rem
+        margin-right: 8rem
+        margin-bottom: 1.7rem
+        color: rgba($light, 0.3)
+        &:nth-child(4)
+            margin-bottom: 3rem
+        &--chosen
+            color: $light
+        &__count
+            position: relative
+            font-family: 'Yeseva One',cursive
+            font-size: 1.07rem
+            line-height: 1.5rem
+            text-transform: uppercase
+            margin-bottom: 1.214rem
+            &::after
+                content: ''
+                position: absolute
+                bottom: -5px
+                left: 0
+                width: 19px
+                height: 1px
+                background: rgba($primary, 0.3)
+            &--chosen
+                &::after
+                   content: ''
+                   position: absolute
+                   bottom: -5px
+                   left: 0
+                   width: 19px
+                   height: 1px
+                   background: $primary 
+            
+        &__text
+            font-size: 1.07rem
+            line-height: 1.29rem
+    .step-img
+        width: 805px
+        height: 421px
+
+            

@@ -1,0 +1,96 @@
+.team
+    margin-top: -27.142rem
+    padding-bottom: 0.5rem
+    &__text
+        max-width: 40.785rem
+        margin: auto
+        margin-bottom: 4.285rem
+        text-align: center
+        font-size: 1.428rem
+        line-height: 2.4rem
+        &::before
+            content: ''
+            display: block
+            margin: auto
+            margin-bottom: 1rem
+            width: 55px
+            height: 2px
+            background-color: $primary
+            border-radius: 30px
+    .container
+        max-width: 72.92857rem
+    .section-title
+        margin-bottom: 1.1rem   
+        &__heading
+            &--light
+                color: $light
+                font-size: 1.428rem
+                line-height: 2rem
+                text-transform: uppercase
+                text-align: center
+                
+        &__image
+            margin-bottom: 1.4rem
+        &__subtitle
+            max-width: 32rem
+            color: $light
+            margin-bottom: 5.357rem
+    .control__text
+        margin-bottom: 0
+    .row
+        margin-bottom: 3.85rem
+    .col
+        display: flex
+        .card
+            position: relative
+            max-width: 19.43rem
+            z-index: 3
+            &::before
+                content: ''
+                position: absolute
+                top: -35px
+                left: -35px
+                width: 70px
+                height: 70px
+                z-index: 3
+                background: $primary url('../img/idea.svg') no-repeat center
+                box-shadow: 0px 5px 20px rgba(227, 184, 115, 0.5)
+            &__design
+                &::before
+                    background: $primary url('../img/designer.svg') no-repeat center
+            &__foreman
+                &::before
+                    background: $primary url('../img/portfolio.svg') no-repeat center
+            &__image
+                position: relative
+                &__team
+                    width: 272px
+                    height: 405px
+            &__name
+                margin: 0
+                margin-bottom: 0.5rem
+            &__desc
+                margin: 0
+                margin-bottom: 1.857rem
+                color: $secondary
+            &__text
+                display: flex
+                flex-direction: column
+                padding: 0
+                margin-top: -6.3rem
+                max-width: 16.64rem
+                text-align: center
+            &__exp
+                color: $light
+                width: 100%
+                padding: 1rem
+                text-transform: uppercase
+                font-family: 'Yeseva One', cursive
+                font-weight: normal
+                background: $primary
+            &-team
+                &__human
+                    font-size: 1.28rem
+                    padding: 1.57rem 1.5rem
+                    margin: 0 auto
+                    padding-bottom: 0
